@@ -29,3 +29,16 @@
     padding: 1.5em;
     font-size: 14px;
 }
+
+@media screen and (min-width: 1024px){
+    .topicos__link {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 1559px) {
+    .topicos__lista {
+        width: 600px;
+        margin: auto;
+    }
+}

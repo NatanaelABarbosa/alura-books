@@ -39,3 +39,38 @@
     background-repeat: no-repeat;
     background-position: 32px;
 }
+
+@media screen and (min-width: 1024px){
+    .contato {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .contato__email {
+        width: 30%;
+    }
+
+    .contato__descricao {
+        width: 30%;
+    }
+
+    .contato__titulo {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 1559px) {
+    .contato {
+        width: 1000px;
+        margin: auto;
+    }
+    
+    .contato__descricao {
+        text-align: left;
+    }
+
+    .contato__titulo {
+        font-size: 2rem;
+    }
+}

@@ -62,3 +62,131 @@
 .container__botao:hover {
     cursor: pointer;
 }
+
+.container__titulo {
+    display: none;
+}
+
+.opcoes {
+    display: none;
+}
+
+.container__logo {
+    display: flex;
+    align-items: center;
+}
+
+.container__texto {
+    display: none;
+}
+
+.opcoes-principais {
+    display: flex;
+    align-items: center;
+    gap: 3em;
+}
+
+
+@media screen and (min-width: 1024px) {
+    .container__titulo, .container__titulo--negrito {
+        font-family: var(--fonte-secundaria);
+        font-size: 30px;
+    }
+
+    .container__titulo {
+        font-weight: 400;
+        display: block;
+    }
+
+    .container__titulo--negrito {
+        font-weight: 700;
+    }
+
+    .cabecalho__menu-hamburguer {
+        display: none;
+    }
+
+    .opcoes {
+        display: flex;
+    }
+
+    .opcoes__link {
+        text-decoration: none;
+        color: var(--preto);
+        padding: 0.75em;
+        text-transform: uppercase;
+    }
+
+    .opcoes__link-menu {
+        display: inline-block;
+    }
+
+    .container__imagem-transparente {
+        display: none;
+    }
+
+    .cabecalho {
+        justify-content: space-around;
+    }
+
+    .lista-menu-tablet {
+        display: none;
+        position: absolute;
+        top: 80%;
+        width: 230px;
+    }
+
+    .container__botao-tablet:checked ~ .lista-menu-tablet {
+        display: block;
+    }
+    
+    .container__botao-tablet {
+        display: none;
+    }
+
+    .lista-menu-tablet__item {
+        padding: 1em;
+        background-color: var(--branco);
+    }
+
+    .lista-menu-tablet__link {
+        background: var(--azul-degrade);
+        text-decoration: none;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+
+    .container__imagens {
+        display: flex;
+        gap: 2em;
+    }
+}
+
+@media screen and (min-width: 1559px){
+    .container__link {
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        font-size: 1.25rem;
+        color: var(--preto);
+    }
+
+    .container {
+        display: flex;
+        gap: 3em;
+    }
+
+    .opcoes__item-menu:hover {
+        cursor: pointer;
+    }
+
+    .cabecalho {
+        padding: 0 5em;
+        justify-content: space-between;
+    }
+
+    .container__texto {
+        display: inline;
+    }
+}
