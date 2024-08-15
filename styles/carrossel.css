@@ -122,10 +122,12 @@
 
 @media screen and (min-width: 1670px) {
     .card {
-        margin: 3em 13vw 3em 0;
+        margin: 3em 9vw 3em 0;
+        width: 800px;
     }
 
     .swiper {
-        margin-left: 13vw;
+        width: 800px;
+        margin-left: 9vw;
     }
 }
