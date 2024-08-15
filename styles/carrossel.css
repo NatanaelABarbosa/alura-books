@@ -112,13 +112,20 @@
     }
 
     .card {
-        margin: 0;
-        margin-right: auto;
-        margin-top: 3em;
-        margin-bottom: 3em;
+        margin: 3em 8vw 3em 0;
     }
 
     .swiper {
-        margin-left: auto;
+        margin-left: 8vw;
+    }
+}
+
+@media screen and (min-width: 1670px) {
+    .card {
+        margin: 3em 13vw 3em 0;
+    }
+
+    .swiper {
+        margin-left: 13vw;
     }
 }
